@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tester la veille des stages LEA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --creme:#f7f1e6; --encre:#22201c; --sombre:#2b2a33; --accent:#b4532a;
+    --doux:#ece3d3; --trait:#d9cdb8; --gris:#5c5750;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--creme);color:var(--encre);
+       font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+       font-size:17px;line-height:1.6}
+  header{background:var(--sombre);color:#f7f1e6;padding:2.2rem 1.25rem 2rem}
+  .bandeau{max-width:760px;margin:0 auto}
+  .sur{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;opacity:.75;margin:0 0 .6rem}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:2rem;line-height:1.2;margin:0}
+  .sous{margin:.7rem 0 0;opacity:.85}
+  main{max-width:760px;margin:0 auto;padding:1.5rem 1.25rem 3rem}
+  h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.35rem;margin:2.2rem 0 .7rem;
+     padding-bottom:.3rem;border-bottom:2px solid var(--trait)}
+  a{color:var(--accent)}
+  .lien{display:block;background:#fff;border:2px solid var(--accent);border-radius:10px;
+        padding:1rem 1.2rem;margin:1.2rem 0;text-decoration:none;color:var(--encre)}
+  .lien strong{display:block;font-family:Fraunces,Georgia,serif;font-size:1.15rem;color:var(--accent)}
+  .lien span{font-size:.92rem;color:var(--gris);word-break:break-all}
+  .lien:hover{background:var(--doux)}
+  ol.etapes{counter-reset:e;list-style:none;padding:0;margin:0}
+  ol.etapes>li{counter-increment:e;position:relative;padding:.9rem 1rem .9rem 3.4rem;margin:.7rem 0;
+               background:#fff;border:1px solid var(--trait);border-radius:10px}
+  ol.etapes>li::before{content:counter(e);position:absolute;left:1rem;top:.85rem;width:1.7rem;height:1.7rem;
+               border-radius:50%;background:var(--sombre);color:#fff;font-weight:600;
+               display:flex;align-items:center;justify-content:center;font-size:.95rem}
+  ol.etapes b{display:block}
+  ul{padding-left:1.25rem}
+  li{margin:.3rem 0}
+  .encadre{background:var(--doux);border-left:4px solid var(--accent);border-radius:6px;padding:.9rem 1.1rem;margin:1.2rem 0}
+  .questions{background:#fff;border:1px dashed var(--gris);border-radius:10px;padding:1rem 1.2rem}
+  .questions ol{margin:.3rem 0 0;padding-left:1.3rem}
+  table{border-collapse:collapse;width:100%;font-size:.95rem;background:#fff}
+  th,td{border:1px solid var(--trait);padding:.5rem .6rem;text-align:left;vertical-align:top}
+  th{background:var(--doux)}
+  footer{max-width:760px;margin:0 auto;padding:1.5rem 1.25rem 2.5rem;border-top:1px solid var(--trait);
+         font-size:.92rem;color:var(--gris)}
+  footer p{margin:.15rem 0}
+  @media (max-width:520px){h1{font-size:1.6rem}body{font-size:16px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="bandeau">
+    <p class="sur">Université de Lille · Département LEA · Groupe de testeurs</p>
+    <h1>Tester la veille des stages LEA</h1>
+    <p class="sous">De la L3 au M2 : une liste d'offres mise à jour chaque matin, à essayer avant sa diffusion à tous les étudiants.</p>
+  </div>
+</header>
+
+<main>
+  <p>Bonjour à toutes et à tous,</p>
+  <p>Vous m'aviez dit que la veille de stages vous intéressait. Je vous propose donc de faire partie d'un petit groupe de testeurs.</p>
+  <p>Cette veille recense chaque jour des offres de stage pour la L3 et pour les masters LEA. Elle contient déjà un nombre appréciable d'offres et me semble mériter un essai.</p>
+
+  <a class="lien" href="https://domgarci.github.io/veille-stages-lea-resultats/" target="_blank" rel="noopener">
+    <strong>Ouvrir la veille des stages</strong>
+    <span>https://domgarci.github.io/veille-stages-lea-resultats/</span>
+  </a>
+
+  <div class="encadre">
+    <b>Ce test n'a rien d'obligatoire.</b> Vos retours me permettront d'améliorer l'outil et, le cas échéant, de le mettre à la disposition de tous les étudiants.
+  </div>
+
+  <h2>Pourquoi participer</h2>
+  <ul>
+    <li><b>Gagner du temps.</b> La veille parcourt chaque matin le site PASS, qui publie les stages de la fonction publique en France et à l'étranger : ministères, ambassades, consulats, parcs nationaux, collectivités, institutions européennes. Elle en extrait les offres proches des parcours LEA.</li>
+    <li><b>Repérer des offres peu visibles.</b> Ces stages, souvent ouverts à des profils multilingues, échappent aux grandes plateformes privées.</li>
+    <li><b>Améliorer l'outil pour vos camarades.</b> Vos remarques serviront à corriger les mots-clés, le classement et la présentation avant une ouverture à toutes les promotions.</li>
+    <li><b>Acquérir un réflexe professionnel.</b> Savoir organiser une veille, trier et vérifier des informations est une compétence utile bien au-delà du stage : premier emploi, mobilité internationale, veille sectorielle ou commerciale.</li>
+  </ul>
+
+  <h2>Les consignes, en six étapes</h2>
+  <ol class="etapes">
+    <li><b>Ouvrir la page</b>
+      Cliquez sur le lien ci-dessus, depuis un ordinateur ou un téléphone. Aucun compte ni installation n'est nécessaire.</li>
+    <li><b>Choisir votre parcours</b>
+      Dans le menu « Parcours », sélectionnez le vôtre : L3, ou M1 et M2 en ANI, MPT, RICI ou TCI. Le choix « Tous » affiche l'ensemble des offres.</li>
+    <li><b>Affiner la liste</b>
+      Réglez le « Score minimum » sur 2 pour ne garder que les offres les plus proches de votre formation. Utilisez la case « Recherche » pour un mot précis : une langue, un pays, une ville, un secteur.</li>
+    <li><b>Examiner trois à cinq offres</b>
+      Ouvrez le lien officiel de chacune et vérifiez qu'elle est toujours ouverte, que la durée et les dates conviennent et que le niveau d'études demandé correspond au vôtre.</li>
+    <li><b>Revenir deux ou trois fois</b>
+      La liste se met à jour chaque matin. Consultez-la à quelques jours d'intervalle pour voir si de nouvelles offres apparaissent.</li>
+    <li><b>M'envoyer vos remarques</b>
+      Répondez simplement au courriel qui vous a transmis cette page, en vous aidant des questions ci-dessous. Quelques lignes suffisent.</li>
+  </ol>
+
+  <h2>Vos retours</h2>
+  <div class="questions">
+    <b>Questions pour guider votre réponse</b>
+    <ol>
+      <li>Quel parcours avez-vous testé ?</li>
+      <li>Combien d'offres vous ont paru intéressantes ? Avez-vous candidaté ou envisagez-vous de le faire ?</li>
+      <li>Avez-vous vu des offres hors sujet, des liens inactifs, des offres expirées ou un niveau d'études inadapté ? Si oui, lesquelles ?</li>
+      <li>Quels secteurs, pays ou types d'organismes manquent selon vous ?</li>
+      <li>La page est-elle facile à utiliser, notamment sur téléphone ?</li>
+      <li>Conseilleriez-vous cet outil à d'autres étudiants de votre formation ?</li>
+    </ol>
+  </div>
+
+  <h2>Avant de candidater</h2>
+  <table>
+    <tr><th>Mention sur la page</th><th>Ce qu'elle signifie</th></tr>
+    <tr><td>Score de 0 à 3</td><td>La proximité de l'offre avec votre parcours. Il ne juge jamais la qualité de l'employeur.</td></tr>
+    <tr><td>« ancienne »</td><td>L'offre figure dans le flux depuis plus de 45 jours. Vérifiez sur le lien officiel qu'elle est encore ouverte.</td></tr>
+    <tr><td>« niveau à vérifier »</td><td>L'annonce semble viser un autre niveau d'études. Lisez-la attentivement avant de postuler.</td></tr>
+  </table>
+  <ul>
+    <li>La liste est une présélection automatique. Seule l'annonce officielle fait foi.</li>
+    <li>Toutes les offres proviennent pour l'instant du site PASS, donc du secteur public. Les parcours tournés vers l'entreprise, comme ANI ou TCI, y trouveront moins d'offres : continuez à consulter les autres plateformes et Lilagora.</li>
+    <li>Candidatez toujours depuis le site officiel de l'offre. Ne communiquez jamais de données personnelles à un intermédiaire inconnu.</li>
+  </ul>
+
+  <p style="margin-top:2rem">Merci d'avance pour votre aide.</p>
+  <p>Bien cordialement,<br>Domingo Garcia Garza</p>
+</main>
+
+<footer>
+  <p><b>Domingo GARCIA GARZA</b>, maître de conférences HDR en études latino-américaines</p>
+  <p>Faculté des Langues, Cultures et Sociétés (FLCS), Département des langues étrangères appliquées (LEA)</p>
+  <p>Centre d'études en civilisation, langues et lettres étrangères (CECILLE)</p>
+  <p>Université de Lille, campus de Roubaix, 651 avenue des Nations Unies, 59058 Roubaix, bureau 425</p>
+</footer>
+</body>
+</html>
